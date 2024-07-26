@@ -4,6 +4,7 @@ import { ViewCustomerComponent } from './view-customer.component';
 import { FormsModule, NgForm } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import axios from 'axios';
 
 describe('ViewCustomerComponent', () => {
   let component: ViewCustomerComponent;
@@ -11,7 +12,7 @@ describe('ViewCustomerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ViewCustomerComponent,FormsModule, HttpClientModule, CommonModule ]
+      imports: [ViewCustomerComponent,FormsModule, HttpClientModule, CommonModule]
     })
     .compileComponents();
 
